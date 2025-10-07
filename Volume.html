@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volume Balok</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #12122b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #2e4365;
+      padding: 20px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      width: 320px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #f3d58d;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      color: #f3d58d;
+      margin: 10px 0 5px;
+      font-weight: bolder;
+      font-size: 16px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    button {
+      background: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #12122b;
+      
+    }
+
+    .hasil {
+      margin-top: 15px;
+      padding: 10px;
+      background: #2e4365;
+      border-radius: 8px;
+      font-size: 24px;
+      color: #ffcc00;
+      font-weight: bolder;
+    }
+    nav {
+
+  
+  padding: 10px 20px;
+  position:absolute;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: 20px;
+  
+}
+
+nav ul li {
+  margin: 0 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+  </style>
+</head>
+<nav>
+  <ul>
+  <li><a href="index.html">Beranda</a></li>
+  </ul>
+</nav>
+<body>
+  <div class="container">
+    <h2>Kalkulator Volume Balok</h2>
+    <label for="panjang">Panjang (P)</label>
+    <input type="number" id="panjang" placeholder="Masukkan panjang">
+
+    <label for="lebar">Lebar (L)</label>
+    <input type="number" id="lebar" placeholder="Masukkan lebar">
+
+    <label for="tinggi">Tinggi (T)</label>
+    <input type="number" id="tinggi" placeholder="Masukkan tinggi">
+
+    <button onclick="hitungVolume()">Hitung Volume</button>
+
+    <div id="hasil" class="hasil" style="display:none;"></div>
+  </div>
+
+  <script>
+    function hitungVolume() {
+      let p = document.getElementById("panjang").value;
+      let l = document.getElementById("lebar").value;
+      let t = document.getElementById("tinggi").value;
+
+      if(p && l && t){
+        let volume = p * l * t;
+        document.getElementById("hasil").style.display = "block";
+        document.getElementById("hasil").innerText = volume;
+      } else {
+        alert("Harap isi semua nilai panjang, lebar, dan tinggi!");
+      }
+    }
+  </script>
+</body>
+</html>

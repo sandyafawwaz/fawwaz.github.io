@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+
+
+  body::before {
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #12122b;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
+  }
+
+th {
+  border-radius: 20px;
+}
+td , tr{
+  border: 3px solid #2e4365;
+  border-radius: 20px;
+}
+div {
+  opacity: 0.8;
+  
+}
+td, tr.thick {
+  font-weight: bold;
+  
+}
+th {
+  height: 40px;
+  
+}
+td {
+  height: 50px;
+
+}
+th {
+  color: #f5c16c;
+
+}
+h2 {
+  text-align: center;
+  color: #f5c16c;
+
+}
+h4 {
+  text-align: center;
+   color: #f5c16c;
+
+}
+th {
+  background-color: #12122b;
+}
+td, tr {
+  background-color: #2e4365;
+  width: 2px;
+  margin: 20px;
+}
+td {
+   text-align: center;
+   color:#f5c16c;
+}
+h2, h4, th, td {
+  font-family: "Arial", Arial, Arial;
+  margin-left: 20px;
+}
+
+nav {
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+nav ul {  
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  margin-top: 10px;
+  
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+  <ul>
+  <li><a href="index.html">Beranda</a></li>
+  </ul>
+</nav>
+
+<h2>Jadwal Mata Pelajaran 12 DKV 1</h2>
+<div class="div2">
+<h4> Tahun Ajaran 2025</h4>
+
+<table style="width:100%">
+  <tr>
+    <th>Senin</th>
+    <th>Selasa</th> 
+    <th>Rabu</th>
+    <th>Kamis</th>
+    <th>Jumat</th>
+  </tr>
+  <tr>
+    <td>Konsentrasi Keahlian DKV 3</td>
+    <td>Konsentrasi Keahlian DKV 2</td>
+    <td>Konsentrasi Keahlian DKV 4</td>
+      <td>Mapel Pilihan Kelas 12</td>
+        <td>Bahasa Indonesia</td>
+  </tr>
+  <tr>
+    <th colspan="5">ISTIRAHAT</td>
+  </tr>
+  <tr>
+    <td>Bahasa Korea</td>
+    <td>PAI dan Budi Pekerti</td>
+    <td>PKWH</td>
+      <td>Konsentrasi Keahlian DKV 4</td>
+        <td>Bahasa Inggris</td>
+  </tr>
+  <tr>
+    <th colspan="5">ISHOMA</td>
+  </tr>
+  <tr>
+    <td>Konsentrasi Keahlian DKV 2</td>
+    <td>Konsentrasi Keahlian DKV 3</td>
+    <td>Matematika</td>
+      <td>Pendidikan Pancasila</td>
+        <td></td>
+   </tr>
+   <tr>
+    <td></th>
+    <td></th> 
+    <td></th>
+      <td>Bahasa Inggris</td>
+        <td></td>
+  </tr>
+  </div>
+</table>
+</body>
+</html>
